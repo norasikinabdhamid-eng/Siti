@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #090d16;
+    color: #f1f5f9;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+.cinematic-hero-glow {
+  background-image:
+    radial-gradient(650px circle at 15% 15%, rgba(0, 210, 255, 0.11), transparent 60%),
+    radial-gradient(560px circle at 85% 25%, rgba(255, 122, 0, 0.08), transparent 60%);
+}
+
+.cinematic-section-glow {
+  background-image:
+    radial-gradient(520px circle at 80% 10%, rgba(0, 210, 255, 0.07), transparent 65%),
+    radial-gradient(480px circle at 10% 90%, rgba(255, 122, 0, 0.06), transparent 65%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

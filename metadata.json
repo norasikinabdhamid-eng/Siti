@@ -1,0 +1,6 @@
+{
+  "name": "Global Institute of Studies (GIS)",
+  "description": "Laman rasmi pendaftaran dan maklumat program pengajian lepasan SPM (17+ tahun) di Global Institute of Studies (GIS), ditubuhkan sejak 2001.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
